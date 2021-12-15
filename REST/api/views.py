@@ -125,7 +125,7 @@ class StudentViewSet(viewsets.ModelViewSet):
     queryset=Student.objects.all()
     serializer_class=StudentSerializer
     authentication_classes=[TokenAuthentication]
-    permission_classes=[IsAuthenticated]     
+    # permission_classes=[IsAuthenticated]     
     # permission_classes=[IsAuthenticatedOrReadOnly]     
 
 
